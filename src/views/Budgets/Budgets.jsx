@@ -1,21 +1,21 @@
 import React from "react";
 import { Row, Col, Card } from "reactstrap";
 import { PanelHeader } from "components";
-import { bills } from "../../variables/data";
+import { budgets } from "../../variables/data";
 
-console.dir(bills);
+console.dir(budgets);
 
-const Bills = () => (
+const Budgets = () => (
   <div>
     <PanelHeader size="sm" />
     <div className="content">
       <Row>
         <Col xs={12}>
-          <Card>{bills[0].amount}</Card>
+          <Card>Budgets</Card>
         </Col>
       </Row>
     </div>
   </div>
 );
 
-export default Bills;
+export default Budgets;
