@@ -5,7 +5,7 @@ const bills = [{
   },
   {
     "date": "2018/04/12",
-    "instance": 2,
+    "instance": 3,
     "amount": "12"
   },
   {
