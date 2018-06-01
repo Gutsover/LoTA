@@ -5,12 +5,12 @@ const bills = [{
   },
   {
     "date": "2018/04/12",
-    "instance": 1,
+    "instance": 2,
     "amount": "12"
   },
   {
     "date": "2018/04/22",
-    "instance": 1,
+    "instance": 5,
     "amount": "26"
   },
   {
@@ -25,7 +25,7 @@ const bills = [{
   },
   {
     "date": "2018/05/22",
-    "instance": 1,
+    "instance": 3,
     "amount": "23"
   },
   {

@@ -4,71 +4,77 @@ import { PanelHeader } from "components";
 import { CardAuthor } from 'components';
 import { user } from "../../variables/data";
 
-const User = () => (
-  <div>
-    <PanelHeader size="sm" />
-    <div className="content">
-      <Row>
-        <Col md={12}>
-        {/* {
-          user.map(user => (
-        
-          <Card className="card-user" key={user.name} style={{width: '20rem'}}>
-            <CardBody>
-              <CardAuthor
-                avatar={user.avatar}
-                avatarAlt="..."
-                title={user.name}
-                description={user.mail}
-              />
-              <strong>{user.group}</strong>
-            </CardBody>
+class User extends React.Component {
+  state = {
+    view: "card"
+  };
 
-          </Card>
-        ))
-        } */}
-          <Card>
-            <Table responsive>
-              <thead className=" text-primary">
-                <tr>
-                  <th>
-                    Name
-                  </th>
-                  <th>
-                    Mail
-                  </th>
-                  <th className="text-right">
-                    Group
-                  </th>
-                </tr>
-              </thead>
+  render() {
+    return (
+      <div>
+      <PanelHeader size="sm" />
+      <div className="content">
+        <Row>
+          <Col md={12}>
 
-              <tbody>
-                {
-                  user.map(user => (
-                    <tr key={user.name}>
-                      <td>
-                        {user.name}
-                      </td>
+          {this.state.view === "card"
+            ? user.map(user => (
+              <Card className="card-user" key={user.name} style={{width: '20rem'}}>
+                <CardBody>
+                  <CardAuthor
+                    avatar={user.avatar}
+                    avatarAlt="..."
+                    title={user.name}
+                    description={user.mail}
+                  />
+                  <strong>{user.group}</strong>
+                </CardBody>
+              </Card>
+            ))
+            : <Card>
+              <Table responsive>
+                <thead className=" text-primary">
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Mail
+                    </th>
+                    <th className="text-right">
+                      Group
+                    </th>
+                  </tr>
+                </thead>
 
-                      <td>
-                        {user.mail}
-                      </td>
+                <tbody>
+                  {
+                    user.map(user => (
+                      <tr key={user.name}>
+                        <td>
+                          {user.name}
+                        </td>
 
-                      <td className="text-right">
-                        {user.group}
-                      </td>
-                    </tr>
-                  ))
-                }
-              </tbody>
-            </Table>
-          </Card>
+                        <td>
+                          {user.mail}
+                        </td>
 
-        </Col>
-      </Row>
-    </div>
-  </div>
-);
+                        <td className="text-right">
+                          {user.group}
+                        </td>
+                      </tr>
+                    ))
+                  }
+                </tbody>
+              </Table>
+            </Card>
+          }
+          </Col>
+        </Row>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default User;
