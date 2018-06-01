@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, ListGroup, ListGroupItem, CardTitle, CardBody } from "reactstrap";
+import { Row, Col, Card, ListGroup, ListGroupItem, CardTitle, CardBody, Table } from "reactstrap";
 import { PanelHeader } from "components";
 import { budgets } from "../../variables/data";
 
@@ -11,7 +11,7 @@ const Budgets = () => (
     <div className="content">
       <Row>
         <Col xs={12}>
-          { budgets.map(budget => (
+          {/* { budgets.map(budget => (
           <Card key={budget.name} style={{width: '20rem'}}>
           <CardBody>
             <CardTitle>{budget.name}</CardTitle>
@@ -34,7 +34,52 @@ const Budgets = () => (
             </CardBody>
           </Card>
           ))
-          }
+          } */}
+
+          <Card>
+            <Table responsive>
+              <thead className=" text-primary">
+                <tr>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Seuil Alert
+                  </th>
+                  <th>
+                    Seuil Maximum
+                  </th>
+                  <th>
+                    Instances
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+              {
+                  budgets.map(budget => (
+                    <tr key={budget.name}>
+                      <td>
+                        {budget.name}
+                      </td>
+
+                      <td>
+                        {budget.seuilAlert}
+                      </td>
+
+                      <td>
+                        {budget.seuilMaximum}
+                      </td>
+                      <td>
+                        {budget.instances}
+                      </td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </Table>
+          </Card>
+
         </Col>
       </Row>
     </div>
