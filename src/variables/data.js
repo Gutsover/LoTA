@@ -103,11 +103,16 @@ const instances = [{
 
 const user = [{
     "id": "42",
+    "avatar": "https://i.pinimg.com/originals/6f/9b/f3/6f9bf3dd5720b142d0bfb141d2ada798.jpg",
+    "name": "Gollum",
     "mail": "contact@hoistthecolor.fr",
     "group": "admin"
   },
   {
     "id": "1337",
+    "avatar": "https://78.media.tumblr.com/avatar_755bae28316b_128.pnj",
+
+    "name": "Gandalf",
     "mail": "qlamamy@alacrite.fr",
     "group": "informagicien"
   }
