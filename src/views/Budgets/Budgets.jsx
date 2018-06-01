@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card } from "reactstrap";
+import { Row, Col, Card, ListGroup, ListGroupItem, CardTitle, CardBody } from "reactstrap";
 import { PanelHeader } from "components";
 import { budgets } from "../../variables/data";
 
@@ -11,7 +11,30 @@ const Budgets = () => (
     <div className="content">
       <Row>
         <Col xs={12}>
-          <Card>Budgets</Card>
+          { budgets.map(budget => (
+          <Card key={budget.name} style={{width: '20rem'}}>
+          <CardBody>
+            <CardTitle>{budget.name}</CardTitle>
+              <ListGroup flush>
+                <ListGroupItem><strong>Seuil Alert : </strong> {budget.seuilAlert}</ListGroupItem>
+                <ListGroupItem><strong>Seuil seuilMaximum : </strong> {budget.seuilMaximum}</ListGroupItem>
+                <ListGroupItem><strong>Instances : </strong></ListGroupItem>
+                <ListGroupItem>
+                  <ListGroup flush>
+                  {
+                    budget.instances.map(instance => (
+                      <ListGroupItem>{instance}</ListGroupItem>
+                      )
+                    )
+                  }
+                  </ListGroup>
+                </ListGroupItem>
+
+              </ListGroup>
+            </CardBody>
+          </Card>
+          ))
+          }
         </Col>
       </Row>
     </div>
