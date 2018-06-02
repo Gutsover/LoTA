@@ -2,7 +2,7 @@
   "name": "nud-react",
   "version": "1.0.2",
   "private": true,
-  "homepage": "https://Gutsover.github.io/lota",
+  "homepage": "https://Gutsover.github.io/LoTA",
   "dependencies": {
     "@nivo/bar": "^0.40.0",
     "bootstrap": "4.0.0-beta",
