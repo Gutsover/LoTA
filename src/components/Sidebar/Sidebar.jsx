@@ -34,13 +34,13 @@ class Sidebar extends React.Component {
     return (
       <div className="sidebar" data-color="green">
         <div className="logo">
-          <a href="/" className="simple-text logo-mini">
+          <a href="https://gutsover.github.io/LoTA" className="simple-text logo-mini">
             <div className="logo-img">
               {/* TODO */}
               <img src={logo} alt="react-logo" />
             </div>
           </a>
-          <a href="/" className="simple-text logo-normal">
+          <a href="https://gutsover.github.io/LoTA" className="simple-text logo-normal">
             LoTA
           </a>
         </div>
