@@ -42,7 +42,12 @@ class Bills extends React.Component {
         <PanelHeader
           size="md"
           content={
-            <Button color="success" round="true" onClick={this.changeView}>
+            <Button
+              className="buttonView"
+              color="success"
+              round="true"
+              onClick={this.changeView}
+            >
               <i className={"now-ui-icons " + icon} />
             </Button>
           }

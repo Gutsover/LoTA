@@ -1,7 +1,12 @@
-.sidebar::after, .off-canvas-sidebar::after{
+.sidebar::after,
+.off-canvas-sidebar::after {
   background: #05c46b;
 }
 
 .card {
   margin-right: 2rem;
+}
+
+.buttonView {
+  margin-left: 2rem;
 }
