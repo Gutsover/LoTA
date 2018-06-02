@@ -1,12 +1,22 @@
-.sidebar::after,
-.off-canvas-sidebar::after {
-  background: #05c46b;
-}
-
 .card {
   margin-right: 2rem;
 }
 
 .buttonView {
   margin-left: 2rem;
+}
+
+.buttonViewBills {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+}
+
+.header-container {
+  position: relative;
+  height: 280px;
+}
+
+.header-container text {
+  fill: white;
 }
