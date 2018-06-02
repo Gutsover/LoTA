@@ -115,6 +115,14 @@ const user = [{
     "name": "Gandalf",
     "mail": "qlamamy@alacrite.fr",
     "group": "informagicien"
+  },
+  {
+    "id": "1989",
+    "avatar": "https://pbs.twimg.com/profile_images/3536610637/a921387e1d2702bd52c44256672d0ee2.jpeg",
+
+    "name": "Mylène",
+    "mail": "mylenevandaele@gmail.com",
+    "group": "future employée de l'année"
   }
 ];
 
