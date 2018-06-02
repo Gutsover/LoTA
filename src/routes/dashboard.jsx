@@ -16,10 +16,12 @@ var dashRoutes = [
   {
     path: "/instances",
     name: "Instances",
-    icon: "design_app",
+    icon: "loader_gear",
     component: Instances
   },
 
-  { path: "/user", name: "User", icon: "users_single-02", component: User }
+  { path: "/user", name: "User", icon: "users_single-02", component: User },
+
+  { redirect: true, path: "/", pathTo: "/bills", name: "Bills" }
 ];
 export default dashRoutes;
