@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://creativetimofficial.github.io/now-ui-dashboard-react/#/dashboard",
   "dependencies": {
+    "@nivo/bar": "^0.40.0",
     "bootstrap": "4.0.0-beta",
     "chart.js": "2.7.1",
     "history": "4.7.2",
