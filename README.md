@@ -1,6 +1,6 @@
 # Lord of The Api
 
-Simple execice d'intégration utilisant [React](https://reactjs.org), framework [now ui](https://creative-tim.com/product/now-ui-dashboard-react), [chartjs](https://chartjs.org)
+Simple exercice d'intégration utilisant [React](https://reactjs.org), framework [now ui](https://creative-tim.com/product/now-ui-dashboard-react), [chartjs](https://chartjs.org)
 
 ## Contexte :
 
